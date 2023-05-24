@@ -1,0 +1,173 @@
+* {
+    /*Selector universal, elimina todo el padding y margin de la página, además le asigna la fuente a todo 
+    el texto que se le coloque a la página*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*Asigna el color de fono al body de la página*/
+    background-color: #A9C7DD;
+    font-family: sans-serif;
+    
+}
+
+header {
+    /*Asigna un border inferior de 0, además le coloca un tamaño al header de 300 px y un overflow: hidden 
+    para evitar que el contenido flote fuera del encabezado y cause espacios adicionales*/
+    margin-bottom: 0;
+    height: 300px;
+    overflow: hidden;
+}
+
+.Subtítulo {
+    /**/ 
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 45px;
+    font-weight: bold;
+}
+
+nav {
+    /*Asigna un margen superior de cero y un color de fondo a la barra de navegación*/
+    margin-top: 0;
+    background-color: #1188DF;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    margin-left: 150px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #00487c;
+    border-radius: 15px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.card {
+    width: 100%;
+    margin: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 248px;
+    padding: 3.5px;
+}
+
+.card p {
+    margin:8px;
+    text-align: justify;
+    line-height: 1.5;
+    color:#000000;
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.card a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:#000000;
+    border: 1px solid #1188DF;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card a:hover{
+    background-color: #1188DF;
+    color: #000000;
+}
+
+.menusecundario {
+    background-color: #73A7CD;
+    width: 100%;
+    height: 125px;
+}
+
+.menusecundario h3 {
+    text-align: left;
+    font-weight: bolder;
+    padding:2px;
+}
+
+.menusecundario ul{
+    list-style-type:disc;
+    margin-left: 30px;
+}
+
+.menusecundario ul li{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menusecundario ul li a{
+    text-decoration: none;
+    color:black
+}
+
+.menusecundario ul li a:hover{
+    color: #00487c
+}
+
+footer {
+    /* Estilos generales del footer */
+    background-color: #1188DF;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-copyright {
+    /* Estilos para el texto de derechos de autor */
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 16px;
+}
